@@ -8,6 +8,6 @@ class objectcounter:
         print(objectcounter.noofobj)
 
 o1= objectcounter()
-o2=objectcounter()
+o2= objectcounter()
 
 objectcounter.displaycount()

@@ -5,4 +5,4 @@ def rec(x):
 
         return (x*rec(x-1))
 
-print(rec(4))
+print(rec(50))
