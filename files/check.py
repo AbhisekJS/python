@@ -9,3 +9,7 @@ if os.path.isfile('myfile.txt'):
 else:
     print("file doesnt exist")
     sys.exit()
+
+s=f.read()
+print(s)
+f.close()
