@@ -8,14 +8,16 @@ if conn.is_connected():
 cursor= conn.cursor()
 cursor.execute('use classicmodels')
 #cursor.execute('select * from customers')
-cursor.execute('''SELECT DISTINCT
-    state
+cursor.execute('''SELECT 
+    officeCode, 
+    city, 
+    phone
 FROM
-    customers
+    offices
 WHERE
-    state IS NOT NULL
-LIMIT 5;''')
+    country NOT IN ('USA' , 'France')''')
 
+    
 '''row= cursor.fetchone()'''
 
 '''while row is not None:
